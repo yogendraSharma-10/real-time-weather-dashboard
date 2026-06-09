@@ -1,0 +1,44 @@
+```json
+{
+  "name": "weather-dashboard-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5000"
+  // During development, this proxies API requests from the React app (e.g., localhost:3000)
+  // to the Node.js backend server (e.g., localhost:5000) to avoid CORS issues.
+  // In a production environment, a proper web server (like Nginx) would handle routing.
+  // This setup assumes the backend for the Weather Dashboard is running on port 5000.
+  // Other services like the Blog Platform, URL Shortener, etc., would have their own
+  // dedicated backend proxies or direct API endpoints.
+}
+```

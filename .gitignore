@@ -1,0 +1,51 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+# Keep .env.example, but ignore actual .env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build artifacts
+# Client-side React build output
+client/build/
+
+# Server-side build output (if applicable, e.g., TypeScript compilation or transpilation)
+server/dist/
+server/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# OS and Editor specific files
+.DS_Store
+.vscode/        # VS Code settings (if not intended for sharing across team)
+.idea/          # IntelliJ/WebStorm settings
+*.swp           # Vim swap files
+*.swo
+*~              # Backup files
+Thumbs.db       # Windows thumbnail cache
+ehthumbs.db
+.cache/         # General cache directories
+
+# Misc
+*.pid           # Process ID files
+*.seed
+*.patch
+.npm/
+.pnpm/
+.yarn/
+.DS_Store
+```
